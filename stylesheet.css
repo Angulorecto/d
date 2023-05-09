@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'righteousregular';
-    src: url('https://github.com/Angulorecto/d/blob/29c12de9485424b6900788e2cd82e87f6624fb09/righteous-regular-webfont.woff2') format('woff2'),
+    src: '/righteous-regular-webfont.woff2' format('woff2'),
          url('https://github.com/Angulorecto/d/blob/29c12de9485424b6900788e2cd82e87f6624fb09/righteous-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
