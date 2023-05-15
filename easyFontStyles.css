@@ -6,3 +6,9 @@
   color:red;
   font-family: 'righteousregular';
 }
+.demon {
+      background: #E80000;
+			background: radial-gradient(ellipse farthest-corner at top left, #E80000 0%, #000000 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+}
