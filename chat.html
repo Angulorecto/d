@@ -4,13 +4,14 @@
   	<title>Chat</title>
   	<body style="background-color:black;">
     		<script>
-		    if (sessionStorage.getItem("loggedIn") != "True") {
+			let li = sessionStorage.getItem("loggedIn");
+		        if (li != "True") {
 			    if (window.location.hostname == "angulorecto.github.io") {
 				    window.location.replace("/d");
 			    } else {
 				    window.location.replace(window.location.hostname);
 			    }
-		    }
+		   	 }
     		</script>
 		<>
 	  </body>
