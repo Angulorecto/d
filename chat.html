@@ -4,8 +4,12 @@
   <body style="background-color:black;">
     <script>
 	    let isLogged = sessionStorage.loggedIn;
-	    if (isLogged !== True) {
-		    window.location.replace(window.location + "/");
+	    if (isLogged != True) {
+		    if (window.location.hostname == "angulorecto.github.com") {
+			    window.location.replace(window.location.hostname + "/d");
+		    } else {
+			    window.location.replace(window.location.hostname);
+		    }
 	    }
     </script>
   </body>
