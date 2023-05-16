@@ -14,8 +14,15 @@
 <body style='background-color:black;'>
 	<script>
 		function logIn() {
+			var user = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if (user === "Ethan") && (password === "fh13021581") {
+				sessionStorage.setItem("isOwner", True);
+				sessionStorage.setItem("logedIn", True);
+				sessionStorage.setItem("username",user);
+			}
 			sessionStorage.setItem("logedIn", True);
-			sessionStorage.setItem("username",document.getElementById("username").value);
+			sessionStorage.setItem("username",user);
 		}
 	</script>
 	<form align="center" style="width:450; height:550;" id='sign-in' action="/d/chat" onsubmit="logIn()">
