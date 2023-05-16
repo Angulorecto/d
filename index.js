@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "index.html"));
 });
 
-app.get("/ok", (req, res) => {
-  res.sendFile(path.join(__dirname, "static", "ok.html"));
+app.get("/chat", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "chat.html"));
 });
 
 app.get("/404", (req, res) => {
