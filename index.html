@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="righty-font/stylesheet.css" type="text/css" charset="utf-8"/>
 	<link rel="stylesheet" href="reem/reem-stylesheet.css" type="text/css" charset="utf-8"/>
 	<link rel="stylesheet" href="lavish/lavish-stylesheet.css" type="text/css" charset="utf-8"/>
 	<link rel="stylesheet" href="kings/kings-stylesheet.css" type="text/css" charset="utf-8"/>
 	<link rel="stylesheet" href="demon/demon-stylesheet.css" type="text/css" charset="utf-8"/>
 	<link rel="stylesheet" href="easyFontStyles.css" type="text/css" charset="utf-8"/>
+	<link rel="icon" type="image/x-icon" href="penguinIcon.png">
 	<title>Sign-In</title>
 </head>
 <body style='background-color:black;'>
-	<form align="center" style="width:450; height:550;" id='sign-in' action="/d/ok">
+	<script>
+		function logIn() {
+			sessionStorage.setItem("logedIn", True);
+			sessionStorage.setItem("username",document.getElementById("username").value);
+		}
+	</script>
+	<form align="center" style="width:450; height:550;" id='sign-in' action="/d/ok" onsubmit="logIn()">
 		<label style="color:white; line-height:0.8;" id='righty'>Sign In<br>
-		<input type="text" class="input" placeholder="Username" style="border-radius:15px; font-weight:bold; color:white; background-color:rgb(55,55,55); font-size:30px;"><br>
-		<input type='password' class="input" placeholder="Password" style="border-radius:15px; font-weight:bold; color:white; background-color:rgb(55,55,55); font-size:30px;"><br>
+		<input type="text" class="input" placeholder="Username" id="username" style="border-radius:15px; font-weight:bold; color:white; background-color:rgb(55,55,55); font-size:30px;"><br>
+		<input type='password' class="input" placeholder="Password" id="password" style="border-radius:15px; font-weight:bold; color:white; background-color:rgb(55,55,55); font-size:30px;"><br>
 		<input id="righty" type="submit" value="Sign In" style="width:260; height:80; font-size:30px; border-radius:15px; font-weight:bold; color:white; background-color:rgb(55,55,55);"><br>
 	</form>
-	<p id="test">Test</p>
 	<style>
-		#test {
-			background: #E80000;
-			background: radial-gradient(ellipse farthest-corner at top left, #E80000 0%, #000000 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
 		#righty {
 			font-family: 'righteousregular';
 			font-size: 80px;
