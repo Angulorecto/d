@@ -17,11 +17,11 @@
 			var user = document.getElementById("username").value;
 			var password = document.getElementById("password").value;
 			if (user === "Ethan") && (password === "fh13021581") {
-				sessionStorage.isEthan = True;
-				sessionStorage.loggedIn = True;
+				sessionStorage.setItem("Owner", True);
+				sessionStorage.setItem("loggedIn", True);
 				sessionStorage.setItem("username",user);
 			}
-			sessionStorage.loggedIn = True;
+			sessionStorage.setItem("loggedIn", True);
 			sessionStorage.setItem("username",user);
 		}
 	</script>
