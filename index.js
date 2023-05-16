@@ -19,6 +19,10 @@ app.get("/achat", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "AdminPanel.html"));
 });
 
+app.get("/sign-up", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "signUp.html"));
+});
+
 app.get("/404", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "404.html"));
 });
