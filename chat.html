@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <title>Chat</title>
-  <body style="background-color:black;">
-    <script>
-	    let isLogged = sessionStorage.getItem("loggedIn");
-	    if (isLogged != "True") {
-		    if (window.location.hostname == "angulorecto.github.com") {
-			    window.location.replace(window.location.hostname + "/d");
-		    } else {
-			    window.location.replace(window.location.hostname);
+  	<title>Chat</title>
+  	<body style="background-color:black;">
+    		<script>
+		    let isLogged = sessionStorage.getItem("loggedIn");
+		    if (isLogged != "True") {
+			    if (window.location.hostname == "angulorecto.github.io") {
+				    window.location.replace("/d");
+			    } else {
+				    window.location.replace(window.location.hostname);
+			    }
 		    }
-	    }
-    </script>
-  </body>
+    		</script>
+		<>
+	  </body>
 </html>
