@@ -3,7 +3,10 @@
   <title>Chat</title>
   <body style="background-color:black;">
     <script>
-		var isLogged = sessionStorage.getItem("isLoggedIn");
+	    let isLogged = sessionStorage.loggedIn;
+	    if (isLogged !== True) {
+		    window.location.replace(window.location + "/")
+	    }
     </script>
   </body>
 </html>
