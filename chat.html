@@ -2,19 +2,20 @@
 <html>
 	<link rel="icon" type="image/x-icon" href="penguinIcon.png">
   	<title>Chat</title>
-  	<body style="background-color:black;">
-    		<script>
-			let li = sessionStorage.loggedIn;
-			if (sessionStorage.loggedIn) {
-			        if (li != True) {
-				    if (window.location.hostname == "angulorecto.github.io") {
-					    window.location.replace("/d");
-				    } else {
-					    window.location.replace(window.location.hostname);
-				    }
-		   		 }
-			}
-    		</script>
-		<>
+	<script>
+		function verify() {
+				let li = sessionStorage.loggedIn;
+				if (sessionStorage.loggedIn) {
+			       		if (li != True) {
+					    if (window.location.hostname == "angulorecto.github.io") {
+						    window.location.replace("/d");
+					    } else {
+						    window.location.replace(window.location.hostname);
+				    	    }
+		   			 }
+				}
+		}
+    	</script>
+  	<body onload="verify()" style="background-color:black;">
 	  </body>
 </html>
